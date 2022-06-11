@@ -1,0 +1,62 @@
+#map {
+    height: 100%;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.boxes-geo {
+    position: relative;
+    width: 25%;
+    margin: 10px 0 0 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    box-shadow: 7px 6px 5px 0px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: 7px 6px 5px 0px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 7px 6px 5px 0px rgba(0, 0, 0, 0.23);
+    font-size: 12px;
+}
+
+.direction-stack input {
+    height: 30px;
+}
+
+.direction-stack button {
+    font-size: 12px;
+}   
+
+.ride-info-stack.boxes-geo {
+    opacity: 0;
+}
+
+.ride-info-stack.boxes-geo.open {
+    opacity: 1;
+}
+
+.ride-info-header img {
+    width: 25px;
+    height: 25px;
+}
+
+.animate {
+    animation-duration: 0.5s;
+    animation-name: animate-fade;
+    animation-delay: 0.5s;
+    animation-fill-mode: none;
+}
+
+@keyframes animate-fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
